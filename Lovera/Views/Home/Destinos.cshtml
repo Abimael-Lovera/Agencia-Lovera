@@ -27,8 +27,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css Custom -->
     <link rel="stylesheet" href="~/css/layout.css" />
-    
-    <link rel="stylesheet" href="~/css/login.css" />
+
+    <link rel="stylesheet" href="~/css/destinos.css" />
 
 </head>
 
@@ -74,31 +74,177 @@
             </div>
         </div>
     </nav>
-    <!--==================== FORM ====================-->
-		<section class="form">
-			<div class="form_box">
-				<div class="btn_box">
-					<div id="btn"></div>
-					<button type="button" class="toggle_btn" onclick="login()">Login</button>
-					<button type="button" class="toggle_btn" onclick="register()">Criar Conta</button>
-				</div>
-
-				<form action="" class="input_group_login" id="login">
-					<input type="text" class="input-field" placeholder="Email" required />
-					<input type="password" class="input-field" placeholder="Senha" required />
-					<input type="checkbox" class="check-box" /><span>Lembrar senha</span>
-					<button type="submit" class="submit_btn">Login</button>
-				</form>
-				<form action="" class="input_group_register" id="register">
-					<input type="text" class="input-field" placeholder="Nome" required />
-					<input type="text" class="input-field" placeholder="Cpf" required />
-					<input type="email" class="input-field" placeholder="Email" required />
-					<input type="password" class="input-field" placeholder="Senha" required />
-					<input type="checkbox" class="check-box" /><span>Eu concordo com os termos e condições </span>
-					<button type="submit" class="submit_btn">Criar Conta</button>
-				</form>
-			</div>
-		</section>
+    <!--==================== CAROUSEL ====================-->
+    <section class="carousel_container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/rio.jpg" class="d-block w-100 vh-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Foz do Iguaçu</h5>
+                        <p>
+                            Sua viagem completa. <br />
+                            Saindo de Brasilia
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/sampa.jpg" class="d-block w-100 vh-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">São Paulol</h5>
+                        <p>
+                            Sua viagem completa. <br />
+                            Saindo de Brasilia
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/foz.jpg" class="d-block w-100 vh-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Rio de Janeiro</h5>
+                        <p>
+                            Sua viagem completa. <br />
+                            Saindo de Brasilia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--==================== CARDS ====================-->
+    <div class="container" id="container">
+        <h1 class="title text-center">Pacotes imperdíveis para suas próximas férias</h1>
+        <p class="subtitle text-center">As melhores ofertas para você com preços especiais para destinos inesquecíveis!
+        </p>
+        <section class="cards_container">
+            <div class="cards_container-card">
+                <img src="~/img/sao-paulo.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Sao paulo</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/rioDeJaneiro.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Rio de Janerio</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/lisboa.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Lisboa</h4>
+                    <p>
+                        Portugal <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/natal.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Natal</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/orlando.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Orlando</h4>
+                    <p>
+                        EEUU <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/maceio-1.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Maceió</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/fozDoIguacu.png" alt="" />
+                <div class="cards_container-body">
+                    <h4>Foz do Iguaçu</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/joaoPessoa.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>João Pessoa</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+            <div class="cards_container-card">
+                <img src="~/img/salvador-1.jpeg" alt="" />
+                <div class="cards_container-body">
+                    <h4>Salvador</h4>
+                    <p>
+                        Brasil <br />
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </p>
+                    <a href="#" class="cards_container-btn"> Promoções<i
+                            class="fa-solid fa-arrow-down-to-square"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
     <!--==================== fOOTER ====================-->
     <footer class="footer">
         <section class="footer_container container">
@@ -212,7 +358,3 @@
 </body>
 
 </html>
-
-
-
-	

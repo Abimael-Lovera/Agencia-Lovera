@@ -27,8 +27,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css Custom -->
     <link rel="stylesheet" href="~/css/layout.css" />
-    
-    <link rel="stylesheet" href="~/css/login.css" />
+
+    <link rel="stylesheet" href="~/css/promocoes.css" />
 
 </head>
 
@@ -74,31 +74,184 @@
             </div>
         </div>
     </nav>
-    <!--==================== FORM ====================-->
-		<section class="form">
-			<div class="form_box">
-				<div class="btn_box">
-					<div id="btn"></div>
-					<button type="button" class="toggle_btn" onclick="login()">Login</button>
-					<button type="button" class="toggle_btn" onclick="register()">Criar Conta</button>
-				</div>
 
-				<form action="" class="input_group_login" id="login">
-					<input type="text" class="input-field" placeholder="Email" required />
-					<input type="password" class="input-field" placeholder="Senha" required />
-					<input type="checkbox" class="check-box" /><span>Lembrar senha</span>
-					<button type="submit" class="submit_btn">Login</button>
-				</form>
-				<form action="" class="input_group_register" id="register">
-					<input type="text" class="input-field" placeholder="Nome" required />
-					<input type="text" class="input-field" placeholder="Cpf" required />
-					<input type="email" class="input-field" placeholder="Email" required />
-					<input type="password" class="input-field" placeholder="Senha" required />
-					<input type="checkbox" class="check-box" /><span>Eu concordo com os termos e condições </span>
-					<button type="submit" class="submit_btn">Criar Conta</button>
-				</form>
-			</div>
-		</section>
+    <!--==================== CARDS ====================-->
+    <div class="container" id="container">
+        <h1 class="title text-center">Pacotes imperdíveis para suas próximas férias</h1>
+        <p class="subtitle text-center">As melhores ofertas para você com preços especiais para destinos inesquecíveis!
+        </p>
+        <section class="cards_container">
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/rioDeJaneiro.jpeg" alt="" />
+                </div>
+                <h4>Rio de Janeiro</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/sao-paulo.jpeg" alt="" />
+                </div>
+                <h4>São Paulo</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/maceio.jpeg" alt="" />
+                </div>
+                <h4>Maceió</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/aracaju.jpeg" alt="" />
+                </div>
+                <h4>Aracaju</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/curitiba.jpeg" alt="" />
+                </div>
+                <h4>Curitiba</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/dubai.jpeg" alt="" />
+                </div>
+                <h4>Dubai</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <!--  -->
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/florianopolis.jpeg" alt="" />
+                </div>
+                <h4>Florianopolis</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/fortaleza.jpeg" alt="" />
+                </div>
+                <h4>Fortaleza</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/fozDoIguacu.png" alt="" />
+                </div>
+                <h4>Foz do Iguaçu</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/joaoPessoa.jpeg" alt="" />
+                </div>
+                <h4>João Pessoa</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/lisboa.jpeg" alt="" />
+                </div>
+                <h4>Lisboa</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/natal.jpeg" alt="" />
+                </div>
+                <h4>Natal</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/orlando.jpeg" alt="" />
+                </div>
+                <h4>Orlando</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+            <div class="cards_container-card">
+                <div class="cards_container-img">
+                    <img src="~/img/salvador.jpeg" alt="" />
+                </div>
+                <h4>Salvador</h4>
+                <p>
+                    Saindo de Brasilia <br />
+                    Hotel + Aereo <br />
+                    3 noites
+                </p>
+                <a href="#" class="cards_container-btn">R$ 1000</a>
+            </div>
+        </section>
+    </div>
     <!--==================== fOOTER ====================-->
     <footer class="footer">
         <section class="footer_container container">
@@ -212,7 +365,3 @@
 </body>
 
 </html>
-
-
-
-	
