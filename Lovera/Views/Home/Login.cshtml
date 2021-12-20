@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "";
+}
+<!DOCTYPE html>
 
 <html>
 
@@ -23,9 +27,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css Custom -->
     <link rel="stylesheet" href="~/css/layout.css" />
-    <link rel="stylesheet" href="~/css/contact.css" />
-    <link rel="stylesheet" href="~/css/home.css" />
-    <link rel="stylesheet" href="~/css/destinos.css" />
+    
     <link rel="stylesheet" href="~/css/login.css" />
 
 </head>
@@ -35,7 +37,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
         <div class="container">
             <a class="navbar-brand nav_logo" asp-controller="Home" asp-action="Index">
-                <img src="img/lovera+.png" alt="logo-lovera" />
+                <img src="~/img/lovera+.png" alt="logo-lovera" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -72,9 +74,31 @@
             </div>
         </div>
     </nav>
-    <div>
-        @RenderBody()
-    </div>
+    <!--==================== FORM ====================-->
+		<section class="form">
+			<div class="form_box">
+				<div class="btn_box">
+					<div id="btn"></div>
+					<button type="button" class="toggle_btn" onclick="login()">Login</button>
+					<button type="button" class="toggle_btn" onclick="register()">Criar Conta</button>
+				</div>
+
+				<form action="" class="input_group_login" id="login">
+					<input type="text" class="input-field" placeholder="Email" required />
+					<input type="password" class="input-field" placeholder="Senha" required />
+					<input type="checkbox" class="check-box" /><span>Lembrar senha</span>
+					<button type="submit" class="submit_btn">Login</button>
+				</form>
+				<form action="" class="input_group_register" id="register">
+					<input type="text" class="input-field" placeholder="Nome" required />
+					<input type="text" class="input-field" placeholder="Cpf" required />
+					<input type="email" class="input-field" placeholder="Email" required />
+					<input type="password" class="input-field" placeholder="Senha" required />
+					<input type="checkbox" class="check-box" /><span>Eu concordo com os termos e condições </span>
+					<button type="submit" class="submit_btn">Criar Conta</button>
+				</form>
+			</div>
+		</section>
     <!--==================== fOOTER ====================-->
     <footer class="footer">
         <section class="footer_container container">
@@ -188,3 +212,7 @@
 </body>
 
 </html>
+
+
+
+	

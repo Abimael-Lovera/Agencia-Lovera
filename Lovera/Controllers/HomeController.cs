@@ -18,10 +18,24 @@ namespace Lovera.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Login()
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult Destinos()
+        {
+            return View();
+        }
+        public IActionResult Promo()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

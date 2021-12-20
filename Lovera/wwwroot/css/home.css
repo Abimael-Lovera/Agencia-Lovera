@@ -1,0 +1,212 @@
+:root {
+	--color-title: #181e4b;
+	--color-subtitle: #df6951;
+	--color-nav-footer: #212832;
+	--color-violet: #6246e5;
+	--color-amarelo: #ffa90f;
+	--color-bg: #fff1da;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	background: url(../img/Decore.png) no-repeat;
+	background-position: top right;
+	background-size: 700px 100vh;
+}
+
+/* Hero */
+
+.hero_container {
+	height: 90%;
+	display: flex;
+	flex-wrap: column wrap;
+	justify-content: space-between;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+.hero_text {
+	color: var(--color-title);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero_img {
+	max-height: 90%;
+	margin-top: 50px;
+}
+
+.hero_title {
+	font-size: 4rem;
+}
+
+.hero_subtitle {
+	color: var(--color-subtitle);
+	font-size: 1rem;
+	text-align: start;
+}
+.hero_btn {
+	display: flex;
+	gap: 2em;
+	justify-content: start;
+	padding: 5px 10px;
+}
+.hero_btn a {
+	border: 3px solid var(--color-subtitle);
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--color-subtitle);
+}
+.hero_btn a:hover {
+	border-color: var(--color-nav-footer);
+
+	color: var(--color-nav-footer);
+}
+
+/* FORM VIAGEM */
+.formTravel {
+	height: 100%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	background: #fff1da;
+}
+.formTravel_title {
+	color: var(--color-title);
+	padding-bottom: 1rem;
+}
+.formTravel_container {
+	max-width: 700px !important;
+	min-width: 250px;
+	border-radius: 30px;
+	padding: 30px;
+	background: var(--color-violet);
+	display: grid;
+	align-items: center;
+	gap: 1rem;
+	margin: 0 auto;
+}
+
+.formtravel_container-title {
+	color: #fff;
+	margin: auto;
+	font-size: 1.5rem;
+}
+
+.formTravel_content {
+	background: #fff;
+	border-radius: 15px;
+	padding: 10px;
+	display: grid;
+	grid-auto-columns: 180px;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.formTravel_content-btn {
+	padding: 0;
+	grid-column: 100px;
+}
+
+.formTravel_group {
+	background: transparent;
+	border-radius: 15px;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.formTravel_group-btn {
+	padding: 0;
+}
+
+.formTravel_group button {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: var(--color-subtitle);
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.formTravel_group input,
+.formTravel_group select {
+	font-size: 0.9rem;
+	outline: none;
+	transition: border-color 0.2s ease-in;
+	border: none;
+	background: transparent;
+}
+
+.formTravel_group input:focus,
+.formTravel_group select:focus {
+	border-bottom: 1px solid #999;
+}
+/* questions */
+.questions_container {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.questions_title {
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+	.hero_img {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	body {
+		background-image: none;
+	}
+	#hero {
+		background: var(--color-bg);
+	}
+	.hero_container {
+		height: 80%;
+	}
+	.hero_img {
+		display: none;
+	}
+	.formTravel {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
+	.formTravel_container {
+		width: 500px;
+		/* padding: 20px; */
+	}
+}
+
+@media (max-width: 550px) {
+	.formTravel {
+		height: 100%;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
+	.formTravel_container {
+		width: 320px;
+		padding: 20px;
+		margin: 0 auto;
+		/* margin: 1rem !important; */
+	}
+	.footer_container {
+		display: grid;
+		margin: auto;
+	}
+}
