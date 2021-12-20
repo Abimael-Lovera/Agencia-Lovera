@@ -25,10 +25,14 @@ namespace Lovera.Models
         public string Description { get; set; } = null!;
 
         [Display(Name = "Preço")]
+
         public decimal Preco { get; set; }
+
+
         [Display(Name = "Destino")]
         public int IdDestino { get; set; }
 
+        [Display(Name ="Destinos")]
         public virtual Destino IdDestinoNavigation { get; set; } = null!;
         public virtual ICollection<Compra> Compras { get; set; }
     }
