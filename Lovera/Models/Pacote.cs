@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lovera.Models
 {
-    [Table("Pacote", Schema ="dbo")]
+    [Table("Pacotes", Schema ="dbo")]
     public partial class Pacote
     {
         public Pacote()

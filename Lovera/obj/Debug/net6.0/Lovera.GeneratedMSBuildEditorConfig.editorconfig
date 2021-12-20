@@ -15,6 +15,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Abimael\Documents\Agencia-Lovera\Lovera
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Abimael/Documents/Agencia-Lovera/Lovera/Views/Destinos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abimael/Documents/Agencia-Lovera/Lovera/Views/Destinos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abimael/Documents/Agencia-Lovera/Lovera/Views/Destinos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abimael/Documents/Agencia-Lovera/Lovera/Views/Destinos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Abimael/Documents/Agencia-Lovera/Lovera/Views/Destinos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGlub3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Abimael/Documents/Agencia-Lovera/Lovera/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

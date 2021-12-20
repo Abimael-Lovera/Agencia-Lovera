@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Lovera.Models
 {
-    [Table("Destino", Schema = "dbo")]
+    [Table("Destinos", Schema = "dbo")]
     public partial class Destino
     {
         public Destino()
