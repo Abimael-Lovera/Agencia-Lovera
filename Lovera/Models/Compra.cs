@@ -20,8 +20,14 @@ namespace Lovera.Models
         [Display(Name = "Promoção")]
         public int IdPromo { get; set; }
 
-        public virtual Pacote IdPacoteNavigation { get; set; } = null!;
-        public virtual Promo IdPromoNavigation { get; set; } = null!;
+        [Display(Name = "Usuario")]
         public virtual Usuario IdUserNavigation { get; set; } = null!;
+
+        [Display(Name = "Pacote")]
+        public virtual Pacote IdPacoteNavigation { get; set; } = null!;
+
+        [Display(Name = "Promoção")]
+        public virtual Promo IdPromoNavigation { get; set; } = null!;
+        
     }
 }
