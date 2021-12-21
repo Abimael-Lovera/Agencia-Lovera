@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Agency</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- Custom Css -->
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<nav class="nav container">
+			<a href="#" class="nav_logo">
+				<h2 class=""><i class="fa-solid fa-earth-americas"></i> Lovera</h2>
+			</a>
+			<ul class="nav_link ul">
+				<li class="nav_items">
+					<a href="#" class="nav_links"><i class="fa-solid fa-plane-departure"></i> Destinos</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links"><i class="fa-solid fa-briefcase"></i> Promoções</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links"><i class="fa-solid fa-address-book"></i> Contato</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links nav_btn">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links nav_btn">Inscreva-se</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="form_box">
+			<div class="btn_box">
+				<div id="btn"></div>
+				<button type="button" class="toggle_btn" onclick="login()">Sign in</button>
+				<button type="button" class="toggle_btn" onclick="register()">Sign up</button>
+			</div>
+			<ul class="social_icons">
+				<li>
+					<a href="http://" target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-facebook-square"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://" target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="http://" target="_blank" rel="noopener noreferrer">
+						<i class="fa-brands fa-youtube"></i>
+					</a>
+				</li>
+			</ul>
+			<form action="" class="input_group" id="login">
+				<input type="text" class="input-field" placeholder="User Id" required />
+				<input type="text" class="input-field" placeholder="Email Password" required />
+				<input type="checkbox" class="check-box" /><span>Remember Password</span>
+				<button type="submit" class="submit_btn">Sign in</button>
+			</form>
+			<form action="" class="input_group" id="register">
+				<input type="text" class="input-field" placeholder="User Id" required />
+				<input type="email" class="input-field" placeholder="Email Password" required />
+				<input type="checkbox" class="check-box" /><span>I agree to therms & conditions</span>
+				<button type="submit" class="submit_btn">Sign up</button>
+			</form>
+		</div>
+
+		<footer class="footer">
+			<section class="footer_container container">
+				<div class="footer_content">
+					<div class="footer_data">
+						<h3 class="footer_title">Travel</h3>
+						<p class="footer_description">
+							Travel you choose the <br />
+							destination, we offer you the <br />
+							experience.
+						</p>
+						<div class="footer_social">
+							<a href="https://www.facebook.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-facebook-square"></i>
+							</a>
+							<a href="https://twitter.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="https://www.instagram.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="https://www.youtube.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer_data">
+						<h3 class="footer_subtitle">About</h3>
+						<ul>
+							<li class="footer_item">
+								<a href="" class="footer_link">About Us</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Features</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">New & Blog</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_data">
+						<h3 class="footer_subtitle">Company</h3>
+						<ul>
+							<li class="footer_item">
+								<a href="" class="footer_link">Team</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Plan y Pricing</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Become a member</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_data">
+						<h3 class="footer_subtitle">Support</h3>
+						<ul>
+							<li class="footer_item">
+								<a href="" class="footer_link">FAQs</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Support Center</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_rights">
+					<p class="footer__copy">&#169; 2021 Abimael Lovera.</p>
+					<div class="footer__terms">
+						<a href="#" class="footer__terms-link">Terms & Agreements</a>
+						<a href="#" class="footer__terms-link">Privacy Policy</a>
+					</div>
+				</div>
+			</section>
+		</footer>
+		<script>
+			const x = document.getElementById('login');
+			const y = document.getElementById('register');
+			const btn = document.getElementById('btn');
+			function register() {
+				x.style.left = '-400px';
+				y.style.left = '50px';
+				btn.style.left = '110px';
+				console.log(login, registerA, btn);
+			}
+			function login() {
+				x.style.left = '50px';
+				y.style.left = '450px';
+				btn.style.left = '0px';
+				console.log(login, registerA, btn);
+			}
+		</script>
+	</body>
+</html>

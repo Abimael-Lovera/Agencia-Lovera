@@ -1,0 +1,188 @@
+:root {
+	--color-title: #181e4b;
+	--color-subtitle: #df6951;
+	--color-nav-footer: #212832;
+	--color-violet: #6246e5;
+	--color-amarelo: #ffa90f;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	background: url(../img/Decore.png) no-repeat;
+	background-position: top right;
+	background-size: 680px 100vh;
+}
+
+/* Hero */
+
+.hero_container {
+	height: 90%;
+	display: flex;
+	flex-wrap: column wrap;
+	justify-content: space-between;
+	margin: 20px auto;
+	overflow: hidden;
+}
+/* .hero_container {
+	display: grid;
+	 grid-auto-flow: column wrap; 
+	grid-auto-rows: 600px;
+	gap: 1em;
+	grid-template-columns: repear(auto-fit, minmax(300px, 600px));
+} */
+
+.hero_text {
+	/* min-width: 300px;
+	max-width: 700px; */
+	color: var(--color-title);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.hero_img {
+	/* border: 1px solid #000; */
+	max-height: 90%;
+	margin-top: 50px;
+	/* text-align: right;  */
+}
+
+.hero_title {
+	font-size: 4rem;
+}
+
+.hero_subtitle {
+	color: var(--color-subtitle);
+	font-size: 1rem;
+	text-align: start;
+}
+.hero_btn {
+	display: flex;
+	gap: 2em;
+	justify-content: start;
+	padding: 5px 10px;
+}
+/* .cta {
+	text-decoration: none;
+	color: #fff;
+	background-color: #f1a501;
+	border-radius: 5px;
+	text-align: center;
+	padding: 5px 10px;
+	display: block;
+} */
+/* CARDS VIAGENS */
+
+/* FORM VIAGEM */
+.formTravel {
+	height: 100vh;
+	padding-top: 50px;
+	text-align: center;
+}
+.formTravel_title {
+	font-size: 2rem;
+	color: var(--color-title);
+	padding-bottom: 1rem;
+}
+.formTravel_container {
+	width: 700px;
+	border-radius: 30px;
+	padding: 30px;
+	background: var(--color-violet);
+	display: grid;
+	align-items: center;
+	gap: 1rem;
+	/* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+
+.formtravel_container-title {
+	color: #fff;
+	/* text-align: center; */
+	margin: auto;
+	font-size: 1.5rem;
+}
+
+.formTravel_content {
+	background: #fff;
+	border-radius: 15px;
+	padding: 10px;
+	display: grid;
+	grid-auto-columns: 180px;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.formTravel_content-btn {
+	padding: 0;
+	grid-column: 100px;
+}
+
+.formTravel_group {
+	background: transparent;
+	border-radius: 15px;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.formTravel_group-btn {
+	padding: 0;
+	/* width: 100px; */
+	/* grid-row: span 2; */
+}
+
+.formTravel_group button {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: var(--color-subtitle);
+	color: #fff;
+	font-size: 1rem;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.formTravel_group input,
+.formTravel_group select {
+	font-size: 0.9rem;
+	outline: none;
+	transition: border-color 0.2s ease-in;
+	border: none;
+	background: transparent;
+}
+
+.formTravel_group input:focus,
+.formTravel_group select:focus {
+	border-bottom: 1px solid #999;
+}
+@media (max-width: 1000px) {
+	.hero_img {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.hero_img {
+		display: none;
+	}
+	.formTravel_container {
+		width: 500px;
+		/* padding: 20px; */
+	}
+}
+
+@media (max-width: 500px) {
+	.formTravel_container {
+		width: 300px;
+		padding: 20px;
+	}
+	.footer_container {
+		display: grid;
+		margin: auto;
+	}
+}
