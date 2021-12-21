@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "AsB44NnSkNThi2W/0wwb8AXABremAVFzRBLF3b3UT0zKELA8jwIEWzEghhDXyC04eF1VhwjdwIE3TwD5gZZdDQ==",
+  "dgSpecHash": "LeBH7L6ZbsBvhPDbNBeQvW7sa3+xOJedNt9Q/NL/iZBUFbykrC8LNS5+6QKkkrVwY9NsGVGZBfM+ukS5fpmQaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Abimael\\Documents\\Agencia-Lovera\\Lovera\\Lovera.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Abimael\\.nuget\\packages\\bootstrap\\5.1.2\\bootstrap.5.1.2.nupkg.sha512",
     "C:\\Users\\Abimael\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Abimael\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Abimael\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

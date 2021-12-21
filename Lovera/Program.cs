@@ -1,7 +1,11 @@
+using Lovera.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<AgenciaContext>(options => options.UseSqlServer(@"Data Source=DESKTOP-660U0M0;Initial Catalog=Agencia;Integrated Security=True"));
 
 var app = builder.Build();
 
