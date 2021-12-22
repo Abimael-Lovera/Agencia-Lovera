@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Agency</title>
+		<
 		<!-- Font Volkhov-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,42 +14,121 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- Css Custom -->
 		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/layout.css" />
 	</head>
 	<body>
+		<!--==================== NAV ====================-->
 		<nav class="nav container">
-			<a href="#" class="nav_logo links">
-				<h2 class=""><i class="fa-solid fa-earth-americas"></i> Lovera</h2>
+			<a class="navbar-brand nav_logo" href="index.html">
+				<img src="img/lovera+.png" alt="logo-lovera" />
 			</a>
 			<ul class="nav_link ul">
 				<li class="nav_items">
-					<a href="#" class="nav_links links"><i class="fa-solid fa-plane-departure"></i> Destinos</a>
+					<a href="destinos.html" class="nav_links"><i class="fa-solid fa-plane-departure"></i> Destinos</a>
 				</li>
 				<li class="nav_items">
-					<a href="#" class="nav_links links"><i class="fa-solid fa-briefcase"></i> Promoções</a>
+					<a href="promocoes.html" class="nav_links"><i class="fa-solid fa-briefcase"></i> Promoções</a>
 				</li>
 				<li class="nav_items">
-					<a href="#" class="nav_links links"><i class="fa-solid fa-address-book"></i> Contato</a>
+					<a href="contact.html" class="nav_links"><i class="fa-solid fa-address-book"></i> Contato</a>
 				</li>
 				<li class="nav_items">
-					<button class="btn nav_btn">
-						<a href="#" class="nav_links links">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
-					</button>
+					<a href="login.html" class="nav_links nav_btn">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
 				</li>
 				<li class="nav_items">
-					<button class="btn nav_btn">
-						<a href="#" class="nav_links links">Cadastro</a>
-					</button>
+					<a href="login.html" class="nav_links nav_btn">Inscreva-se</a>
 				</li>
 			</ul>
 		</nav>
-		<form class="form" action="https://formspree.io/f/xrgjgyed" method="POST">
-			<div class="form_container">
-				<h2 class="form_title">Contáctame</h2>
-				<input type="text" class="form_input" placeholder="Nome" name="name" />
-				<input type="email" class="form_input" placeholder="Email" name="email" />
-				<textarea class="form_input form_input-message" placeholder="Escreva seu messagem" name="message"></textarea>
-				<input type="submit" class="form_cta" value="Enviar" />
-			</div>
-		</form>
+		<!--==================== FORM CONTACT ====================-->
+		<section class="contact">
+			<form class="form" action="https://formspree.io/f/xrgjgyed" method="POST">
+				<div class="form_container">
+					<h2 class="form_title">Contatenos</h2>
+					<input type="text" class="form_input" placeholder="Nome" name="name" />
+					<input type="email" class="form_input" placeholder="Email" name="email" />
+					<textarea class="form_input form_input-message" placeholder="Escreva seu messagem" name="message"></textarea>
+					<input type="submit" class="form_cta" value="Enviar" />
+				</div>
+			</form>
+		</section>
+		<!--==================== Footer ====================-->
+		<footer class="footer">
+			<section class="footer_container container">
+				<div class="footer_content">
+					<div class="footer_data">
+						<h3 class="footer_title">Lovera</h3>
+						<p class="footer_description">
+							Travel you choose the <br />
+							destination, we offer you the <br />
+							experience.
+						</p>
+						<div class="footer_social">
+							<a href="https://www.facebook.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-facebook-square"></i>
+							</a>
+							<a href="https://twitter.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="https://www.instagram.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="https://www.youtube.com/" target="_blank" class="footer_social-media">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div class="footer_data">
+						<h3 class="footer_subtitle">About</h3>
+						<ul>
+							<li class="footer_item">
+								<a href="" class="footer_link">About Us</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Features</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">New & Blog</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_data">
+						<h3 class="footer_subtitle">Company</h3>
+						<ul>
+							<li class="footer_item">
+								<a href="" class="footer_link">Team</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Plan y Pricing</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Become a member</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_data">
+						<h3 class="footer_subtitle">Support</h3>
+						<ul>
+							<li class="footer_item">
+								<a href="" class="footer_link">FAQs</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Support Center</a>
+							</li>
+							<li class="footer_item">
+								<a href="" class="footer_link">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_rights">
+					<p class="footer__copy">&#169; 2021 Abimael Lovera.</p>
+					<div class="footer__terms">
+						<a href="#" class="footer__terms-link">Terms & Agreements</a>
+						<a href="#" class="footer__terms-link">Privacy Policy</a>
+					</div>
+				</div>
+			</section>
+		</footer>
 	</body>
 </html>

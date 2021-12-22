@@ -12,72 +12,64 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<!-- Custom Css -->
 		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/layout.css" />
 	</head>
 	<body>
+		<!--==================== NAV ====================-->
 		<nav class="nav container">
-			<a href="#" class="nav_logo">
-				<h2 class=""><i class="fa-solid fa-earth-americas"></i> Lovera</h2>
+			<a class="navbar-brand nav_logo" href="index.html">
+				<img src="img/lovera+.png" alt="logo-lovera" />
 			</a>
 			<ul class="nav_link ul">
 				<li class="nav_items">
-					<a href="#" class="nav_links"><i class="fa-solid fa-plane-departure"></i> Destinos</a>
+					<a href="destinos.html" class="nav_links"><i class="fa-solid fa-plane-departure"></i> Destinos</a>
 				</li>
 				<li class="nav_items">
-					<a href="#" class="nav_links"><i class="fa-solid fa-briefcase"></i> Promoções</a>
+					<a href="promocoes.html" class="nav_links"><i class="fa-solid fa-briefcase"></i> Promoções</a>
 				</li>
 				<li class="nav_items">
-					<a href="#" class="nav_links"><i class="fa-solid fa-address-book"></i> Contato</a>
+					<a href="contact.html" class="nav_links"><i class="fa-solid fa-address-book"></i> Contato</a>
 				</li>
 				<li class="nav_items">
-					<a href="#" class="nav_links nav_btn">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
+					<a href="login.html" class="nav_links nav_btn">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
 				</li>
 				<li class="nav_items">
-					<a href="#" class="nav_links nav_btn">Inscreva-se</a>
+					<a href="login.html" class="nav_links nav_btn">Inscreva-se</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="form_box">
-			<div class="btn_box">
-				<div id="btn"></div>
-				<button type="button" class="toggle_btn" onclick="login()">Sign in</button>
-				<button type="button" class="toggle_btn" onclick="register()">Sign up</button>
-			</div>
-			<ul class="social_icons">
-				<li>
-					<a href="http://" target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-facebook-square"></i>
-					</a>
-				</li>
-				<li>
-					<a href="http://" target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a href="http://" target="_blank" rel="noopener noreferrer">
-						<i class="fa-brands fa-youtube"></i>
-					</a>
-				</li>
-			</ul>
-			<form action="" class="input_group" id="login">
-				<input type="text" class="input-field" placeholder="User Id" required />
-				<input type="text" class="input-field" placeholder="Email Password" required />
-				<input type="checkbox" class="check-box" /><span>Remember Password</span>
-				<button type="submit" class="submit_btn">Sign in</button>
-			</form>
-			<form action="" class="input_group" id="register">
-				<input type="text" class="input-field" placeholder="User Id" required />
-				<input type="email" class="input-field" placeholder="Email Password" required />
-				<input type="checkbox" class="check-box" /><span>I agree to therms & conditions</span>
-				<button type="submit" class="submit_btn">Sign up</button>
-			</form>
-		</div>
 
+		<!--==================== FORM ====================-->
+		<section class="form">
+			<div class="form_box">
+				<div class="btn_box">
+					<div id="btn"></div>
+					<button type="button" class="toggle_btn" onclick="login()">Login</button>
+					<button type="button" class="toggle_btn" onclick="register()">Criar Conta</button>
+				</div>
+
+				<form action="" class="input_group_login" id="login">
+					<input type="text" class="input-field" placeholder="Email" required />
+					<input type="password" class="input-field" placeholder="Senha" required />
+					<input type="checkbox" class="check-box" /><span>Lembrar senha</span>
+					<button type="submit" class="submit_btn">Login</button>
+				</form>
+				<form action="" class="input_group_register" id="register">
+					<input type="text" class="input-field" placeholder="Nome" required />
+					<input type="text" class="input-field" placeholder="Cpf" required />
+					<input type="email" class="input-field" placeholder="Email" required />
+					<input type="password" class="input-field" placeholder="Senha" required />
+					<input type="checkbox" class="check-box" /><span>Eu concordo com os termos e condições </span>
+					<button type="submit" class="submit_btn">Criar Conta</button>
+				</form>
+			</div>
+		</section>
+		<!--==================== Footer ====================-->
 		<footer class="footer">
 			<section class="footer_container container">
 				<div class="footer_content">
 					<div class="footer_data">
-						<h3 class="footer_title">Travel</h3>
+						<h3 class="footer_title">Lovera</h3>
 						<p class="footer_description">
 							Travel you choose the <br />
 							destination, we offer you the <br />

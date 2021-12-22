@@ -28,28 +28,18 @@ body {
 	margin: 20px auto;
 	overflow: hidden;
 }
-/* .hero_container {
-	display: grid;
-	 grid-auto-flow: column wrap; 
-	grid-auto-rows: 600px;
-	gap: 1em;
-	grid-template-columns: repear(auto-fit, minmax(300px, 600px));
-} */
 
 .hero_text {
-	/* min-width: 300px;
-	max-width: 700px; */
 	color: var(--color-title);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-
+.hero_text h1 {
+	text-align: left;
+}
 .hero_img {
-	/* border: 1px solid #000; */
-	max-height: 90%;
-	margin-top: 50px;
-	/* text-align: right;  */
+	max-height: 100%;
 }
 
 .hero_title {
@@ -67,16 +57,18 @@ body {
 	justify-content: start;
 	padding: 5px 10px;
 }
-/* .cta {
-	text-decoration: none;
-	color: #fff;
-	background-color: #f1a501;
-	border-radius: 5px;
-	text-align: center;
+.hero_btn a {
+	border: 3px solid var(--color-subtitle);
+	border-radius: 10px;
 	padding: 5px 10px;
-	display: block;
-} */
-/* CARDS VIAGENS */
+	text-decoration: none;
+	color: var(--color-subtitle);
+}
+.hero_btn a:hover {
+	border-color: var(--color-nav-footer);
+
+	color: var(--color-nav-footer);
+}
 
 /* FORM VIAGEM */
 .formTravel {
@@ -161,10 +153,63 @@ body {
 .formTravel_group select:focus {
 	border-bottom: 1px solid #999;
 }
-@media (max-width: 1000px) {
-	.hero_img {
-		display: none;
-	}
+
+/* Questions */
+
+.questions {
+	text-align: center;
+}
+
+.questions_container {
+	display: grid;
+	gap: 2rem;
+	padding: 50px 0 100px;
+}
+
+.questions_padding {
+	padding: 0;
+	transition: padding 0.4s;
+	border: 1px solid #5454d4;
+	border-radius: 6px;
+}
+
+.questions_padding-add {
+	padding-bottom: 30px;
+}
+
+.questions_answer {
+	padding: 0 30px;
+	overflow: hidden;
+	transition: transform 0.4s;
+}
+
+.questions_title {
+	cursor: pointer;
+	font-size: 20px;
+	display: flex;
+	padding: 30px 0 30px;
+	cursor: pointer;
+	color: var(--color-title);
+	justify-content: space-between;
+}
+.questions_arrow {
+	/* background: var(--color-title); */
+	width: 25px;
+	height: 25px;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	transition: transform 0.4s;
+	/* margin-left: 10px */
+}
+.questions_arrow-rotate {
+	transform: rotate(180deg);
+}
+
+.questions_show {
+	text-align: left;
+	height: 0;
+	transition: height 0.4s;
 }
 @media (max-width: 768px) {
 	.hero_img {
